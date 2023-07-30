@@ -26,6 +26,13 @@ public class ExampleTest {
         System.out.println("Executing second test...");
     }
 
+    @Test
+    @Disabled
+    @DisplayName("Third testing method")
+    void thirdTest() {
+        System.out.println("Executing third test...");
+    }
+
     @BeforeAll
     static void initu() {
         System.out.println("This message will be displayed  once before execution of all testing methods");
